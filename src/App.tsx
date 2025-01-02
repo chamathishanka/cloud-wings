@@ -11,7 +11,7 @@ function App() {
       <div className="relative">
         <Navbar />
         <Hero />
-        <div className="relative z-20 inset-x-0 top-[80%] sm:top-[50%] lg:top-[50%] mx-auto max-w-7xl px-4 sm:px-6 lg:px-0 -mt-32">
+        <div className="relative z-20 inset-x-0 top-[80%] sm:top-[50%] lg:top-[50%] mx-auto max-w-7xl px-4 sm:px-6 lg:px-0 -mt-10 sm:-mt-32">
           <TabsDemo />
         </div>
       </div>
