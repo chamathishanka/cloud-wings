@@ -15,16 +15,18 @@ CloudWings is a modern web application designed to simplify the process of booki
 
 ### Screenshots
 
+#### Web View
+
+![CloudWings Web Screenshot 1](public/docs/web.png)
+![CloudWings Web Screenshot 2](public/docs/web2.png)
+
 #### Mobile View
 
 ![CloudWings Mobile Screenshot 1](public/docs/mobile.png)
 ![CloudWings Mobile Screenshot 2](public/docs/mobile2.png)
 ![CloudWings Mobile Screenshot 3](public/docs/mobile3.png)
 
-#### Web View
 
-![CloudWings Web Screenshot 1](public/docs/web.png)
-![CloudWings Web Screenshot 2](public/docs/web2.png)
 
 ## Technologies Used
 
