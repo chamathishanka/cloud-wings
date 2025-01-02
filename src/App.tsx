@@ -3,6 +3,7 @@ import Hero from './components/hero';
 import HowItWorks from './components/howItWorks';
 import Navbar from './components/navbar';
 import { TabsDemo } from './components/tab';
+import SearchBar from './components/searchbar';
 
 function App() {
   return (
@@ -10,11 +11,14 @@ function App() {
       <div className="relative">
         <Navbar />
         <Hero />
-        <div className="absolute inset-x-0 top-[60%] sm:top-[40%] lg:top-[70%] mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
+        <div className="absolute inset-x-0 top-[80%] sm:top-[60%] lg:top-[80%] mx-auto max-w-7xl px-4 sm:px-6 lg:px-0 py-6 pb-4">
           <TabsDemo />
         </div>
       </div>
-      <div className='p-32'>
+      <div className="relative z-10 mt-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
+        <SearchBar />
+      </div>
+      <div className="relative z-0 p-32">
         <HowItWorks />
       </div>
       <Footer />
