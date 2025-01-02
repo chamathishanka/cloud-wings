@@ -27,7 +27,7 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "inline-flex items-center justify-center h-12 whitespace-nowrap rounded-t-md px-3 py-1 text-base sm:text-lg md:text-xl font-medium ring-offset-white transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-customMaroon focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-customMaroon data-[state=active]:text-white data-[state=inactive]:bg-customGrey data-[state=inactive]:text-white dark:ring-offset-customMaroon dark:focus-visible:ring-customGrey dark:data-[state=active]:bg-customMaroon dark:data-[state=active]:text-white dark:data-[state=inactive]:bg-customGrey dark:data-[state=inactive]:text-white",
+      "inline-flex items-center justify-center h-10 sm:h-12 whitespace-nowrap rounded-t-md px-2 py-1 text-sm sm:text-base md:text-lg font-medium ring-offset-white transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-customMaroon focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-customMaroon data-[state=active]:text-white data-[state=inactive]:bg-customGrey data-[state=inactive]:text-white dark:ring-offset-customMaroon dark:focus-visible:ring-customGrey dark:data-[state=active]:bg-customMaroon dark:data-[state=active]:text-white dark:data-[state=inactive]:bg-customGrey dark:data-[state=inactive]:text-white w-20 sm:w-auto",
       className
     )}
     {...props}

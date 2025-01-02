@@ -27,7 +27,7 @@ const FlightForm: React.FC<{ passengerCount: number, setPassengerCount: (count: 
         <form className="grid grid-cols-1 lg:grid-cols-5 gap-2">
             {/* Departure City */}
             <div className="relative">
-                <Label htmlFor="departure-city" className="block text-xs text-customMaroon">
+                <Label htmlFor="departure-city" className="block text-xs sm:text-sm text-customMaroon">
                     Departure City
                 </Label>
                 <Select>
@@ -36,12 +36,12 @@ const FlightForm: React.FC<{ passengerCount: number, setPassengerCount: (count: 
                             id="departure-city"
                             placeholder="Select Departure City"
                             readOnly
-                            className="border-customgrey text-xs p-1"
+                            className="border-customgrey text-xs sm:text-sm p-1 sm:p-2"
                         />
                     </SelectTrigger>
                     <SelectContent>
                         {cities.map((city) => (
-                            <SelectItem key={city} value={city} className="text-xs">
+                            <SelectItem key={city} value={city} className="text-xs sm:text-sm">
                                 {city}
                             </SelectItem>
                         ))}
@@ -51,7 +51,7 @@ const FlightForm: React.FC<{ passengerCount: number, setPassengerCount: (count: 
 
             {/* Arrival City */}
             <div className="relative">
-                <Label htmlFor="arrival-city" className="block text-xs text-customMaroon">
+                <Label htmlFor="arrival-city" className="block text-xs sm:text-sm text-customMaroon">
                     Arrival City
                 </Label>
                 <Select>
@@ -60,12 +60,12 @@ const FlightForm: React.FC<{ passengerCount: number, setPassengerCount: (count: 
                             id="arrival-city"
                             placeholder="Select Arrival City"
                             readOnly
-                            className="border-customgrey text-xs p-1"
+                            className="border-customgrey text-xs sm:text-sm p-1 sm:p-2"
                         />
                     </SelectTrigger>
                     <SelectContent>
                         {cities.map((city) => (
-                            <SelectItem key={city} value={city} className="text-xs">
+                            <SelectItem key={city} value={city} className="text-xs sm:text-sm">
                                 {city}
                             </SelectItem>
                         ))}
@@ -75,23 +75,23 @@ const FlightForm: React.FC<{ passengerCount: number, setPassengerCount: (count: 
 
             {/* Departure Date */}
             <div className="relative">
-                <Label htmlFor="departure-date" className="block text-xs text-customMaroon">
+                <Label htmlFor="departure-date" className="block text-xs sm:text-sm text-customMaroon">
                     Departure Date
                 </Label>
-                <Input id="departure-date" type="date" className="border-customgrey text-xs p-1" />
+                <Input id="departure-date" type="date" className="border-customgrey text-xs sm:text-sm p-1 sm:p-2" />
             </div>
 
             {/* Arrival Date */}
             <div className="relative">
-                <Label htmlFor="arrival-date" className="block text-xs text-customMaroon">
+                <Label htmlFor="arrival-date" className="block text-xs sm:text-sm text-customMaroon">
                     Arrival Date
                 </Label>
-                <Input id="arrival-date" type="date" className="border-customgrey text-xs p-1" />
+                <Input id="arrival-date" type="date" className="border-customgrey text-xs sm:text-sm p-1 sm:p-2" />
             </div>
 
             {/* Passengers */}
             <div className="relative">
-                <Label htmlFor="passengers" className="block text-xs text-customMaroon">
+                <Label htmlFor="passengers" className="block text-xs sm:text-sm text-customMaroon">
                     Passengers
                 </Label>
                 <Select
@@ -102,12 +102,12 @@ const FlightForm: React.FC<{ passengerCount: number, setPassengerCount: (count: 
                             id="passengers"
                             placeholder={`${passengerCount} Passengers`}
                             readOnly
-                            className="border-customgrey text-xs p-1"
+                            className="border-customgrey text-xs sm:text-sm p-1 sm:p-2"
                         />
                     </SelectTrigger>
                     <SelectContent>
                         {[1, 2, 3, 4, 5].map((count) => (
-                            <SelectItem key={count} value={count.toString()} className="text-xs">
+                            <SelectItem key={count} value={count.toString()} className="text-xs sm:text-sm">
                                 {count} Passenger{count > 1 && "s"}
                             </SelectItem>
                         ))}
@@ -127,13 +127,13 @@ export function TabsDemo() {
             <TabsList className="flex justify-center w-full">
                 <TabsTrigger
                     value="business-class"
-                    className="w-1/2 lg:w-1/4 text-center"
+                    className="w-1/2 lg:w-1/4 text-center text-xs sm:text-sm"
                 >
                     BUSINESS CLASS
                 </TabsTrigger>
                 <TabsTrigger
                     value="first-class"
-                    className="w-1/2 lg:w-1/4 text-center"
+                    className="w-1/2 lg:w-1/4 text-center text-xs sm:text-sm"
                 >
                     FIRST CLASS
                 </TabsTrigger>
@@ -141,7 +141,7 @@ export function TabsDemo() {
             <TabsContent value="business-class">
                 <Card className="w-full">
                     <CardHeader>
-                        <CardTitle>Book a Business Class Flight</CardTitle>
+                        <CardTitle className="text-sm sm:text-base">Book a Business Class Flight</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-2">
                         <FlightForm passengerCount={businessPassengerCount} setPassengerCount={setBusinessPassengerCount} />
@@ -152,7 +152,7 @@ export function TabsDemo() {
             <TabsContent value="first-class">
                 <Card className="w-full">
                     <CardHeader>
-                        <CardTitle>Book a First Class Flight</CardTitle>
+                        <CardTitle className="text-sm sm:text-base">Book a First Class Flight</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-2">
                         <FlightForm passengerCount={firstClassPassengerCount} setPassengerCount={setFirstClassPassengerCount} />

@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 
 const SearchBar: React.FC = () => {
     return (
-        <div className="flex justify-center items-center py-8">
+        <div className="flex justify-center items-center mt-96 sm:mt-12  py-8">
             <div className="relative w-full" style={{ maxWidth: '150px' }}>
                 <input
                     type="text"

@@ -1,50 +1,70 @@
-# React + TypeScript + Vite
+# CloudWings
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CloudWings is a travel booking application that allows users to search for flights, view travel deals, and book flights easily.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Description](#description)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+- [Scripts](#scripts)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Description
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+CloudWings is a modern web application designed to simplify the process of booking flights. Users can search for flights, view travel deals, and book flights with ease. The application features a responsive design, ensuring a seamless experience across different devices.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Radix UI**: A set of low-level, accessible UI components for building high-quality design systems and web apps.
+- **React Icons**: A collection of popular icons for React applications.
+- **Vite**: A fast build tool and development server for modern web projects.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **shadcn**: A set of components built with Tailwind CSS and Radix UI for building modern web applications.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To get started with the project, follow these steps:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/chamathishanka/cloud-wings.git
+    cd cloud-wings
+    ```
+
+2. **Install dependencies:**
+
+    Make sure you have [Node.js](https://nodejs.org/) installed. Then, install the project dependencies using npm or yarn:
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+    This will install all the necessary dependencies listed in the [package.json](http://_vscodecontentref_/1) file, including Tailwind CSS, Radix UI, React Icons, shadcn, and other packages.
+
+3. **Start the development server:**
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+    This will start the development server and open the application in your default browser.
+
+## Usage
+
+Once the development server is running, you can access the application at `http://localhost:3000`. You can then use the application to search for flights, view travel deals, and book flights.
+
+## Project Structure
+
+The project structure is as follows:
