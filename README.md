@@ -8,15 +8,23 @@ CloudWings is a travel booking application that allows users to search for fligh
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Dependencies](#dependencies)
-- [Scripts](#scripts)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 
 CloudWings is a modern web application designed to simplify the process of booking flights. Users can search for flights, view travel deals, and book flights with ease. The application features a responsive design, ensuring a seamless experience across different devices.
+
+### Screenshots
+
+#### Mobile View
+
+![CloudWings Mobile Screenshot 1](public/docs/mobile.png)
+![CloudWings Mobile Screenshot 2](public/docs/mobile2.png)
+![CloudWings Mobile Screenshot 3](public/docs/mobile3.png)
+
+#### Web View
+
+![CloudWings Web Screenshot 1](public/docs/web.png)
+![CloudWings Web Screenshot 2](public/docs/web2.png)
 
 ## Technologies Used
 
@@ -65,6 +73,4 @@ To get started with the project, follow these steps:
 
 Once the development server is running, you can access the application at `http://localhost:3000`. You can then use the application to search for flights, view travel deals, and book flights.
 
-## Project Structure
 
-The project structure is as follows:
